@@ -1,0 +1,54 @@
+{
+  "id": "marketplace_hero",
+  "type": "SharedSlice",
+  "name": "MarketplaceHero",
+  "description": "MarketplaceHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,em"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em"
+          }
+        }
+      },
+      "items": {
+        "genretitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "GenreTitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "genre": {
+          "type": "Link",
+          "config": {
+            "label": "Genre",
+            "select": "document"
+          }
+        }
+      }
+    }
+  ]
+}
